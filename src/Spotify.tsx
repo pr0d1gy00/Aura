@@ -1,4 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    voiceflow: any;
+  }
+}
 
 const SpotifyAuraPage = () => {
     // Integración del widget de Voiceflow para el chatbot de Aura
